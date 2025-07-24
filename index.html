@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website | Danyal Aurangzeb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon placeholder - replace with your favicon path -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animated gradient background */
+        body {
+            background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 600% 600%;
+            animation: gradientShift 20s ease infinite;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Button hover effects */
+        .social-button,
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+            .social-button:hover,
+            button:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+                color: white;
+            }
+
+        /* Navbar link hover */
+        .navbar a {
+            transition: color 0.3s ease;
+        }
+
+            .navbar a:hover {
+                color: #0077cc;
+            }
+
+        /* Input and textarea focus styles */
+        input:focus,
+        textarea:focus {
+            outline: 2px solid #0077cc;
+            box-shadow: 0 0 5px #0077cc;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Scroll to top button */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+        }
+
+            #scrollTopBtn:hover {
+                background-color: #005fa3;
+            }
+    </style>
+</head>
+
+<body>
+
+    <header class="header" data-aos="fade-down">
+        <a href="#" class="logo">Danyal.</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#resume">Resume</a>
+            <a href="#guidedbyfaith">GuidedbyFaith</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home" data-aos="fade-up">
+        <div class="home-content">
+            <h1><span class="typed-text"></span></h1>
+            <h3>Tech Consultant at Deloitte</h3>
+            <p>
+                Computer Science graduate and Certified ServiceNow System Administrator (CSA) with hands-on experience delivering ServiceNow solutions at Deloitte in the Middle East.
+                Skilled in applying platform fundamentals to real-world, enterprise-level implementations.
+                Passionate about integrating creativity, faith, and productivity to make a meaningful impact in the technology consulting space and beyond.
+            </p>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://qa.linkedin.com/in/danyal-aurangzeb-672025369" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- About us Section -->
+
+    <section id="about" class="about-section" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm Danyal Aurangzeb, a tech consultant with hands-on experience in Qatar
+                specializing in ServiceNow. combining technology with purpose to deliver practical solutions and drive continuous improvement.
+            </p>
+            <p>
+                Beyond my professional life, I’m deeply committed to my faith and creativity. I founded <strong>GuidedByFaith</strong>, a
+                platform that shares daily Islamic reminders to inspire reflection and growth both online and offline.
+            </p>
+            <p>
+                I’m continuously learning and exploring ways to blend productivity with spirituality, aiming to deliver value
+                through every project and interaction.
+            </p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+
+    <section id="resume" class="resume-section" data-aos="fade-up">
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-container">
+
+            <div class="resume-column education-column">
+                <h3>🎓 Education</h3>
+                <div class="timeline">
+                    <div class="timeline-block">
+                        <div class="timeline-left">
+                            <div class="timeline-date">2019–2023</div>
+                            <div class="timeline-title">BSc Computer Science with Professional Experience</div>
+                        </div>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content">
+                            <p>University of Salford</p>
+                            <p><strong>First Class Degree</strong></p>
+                        </div>
+                    </div>
+                    <!-- More education entries here -->
+                </div>
+            </div>
+
+            <div class="resume-column experience-column">
+                <h3>💼 Experience</h3>
+                <div class="timeline">
+
+                    <div class="timeline-block">
+                        <div class="timeline-left">
+                            <div class="timeline-date">2024–Present</div>
+                        </div>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content">
+                            <h4>Deloitte | ServiceNow Consultant</h4>
+                            <h4>Doha, Qatar</h4>
+                            <p>•	Conducted comprehensive testing on ServiceNow platforms to ensure data accuracy, consistency, and reliability through meticulous validation and quality assurance processes.</p>
+                            <p>•	Contributed to the development of technical proposals within business development initiatives, aiding solution design and effectively articulating the proposed approach and deliverables to clients.</p>
+                            <p>•	Developed presentation materials and delivered a targeted presentation to senior leadership, emphasizing key insights and results from a critical project module.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block">
+                        <div class="timeline-left">
+                            <div class="timeline-date">2021–2022</div>
+                        </div>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content">
+                            <h4>Lloyds Banking Group | Technical Credit Risk Analyst</h4>
+                            <h4>Halifax, UK</h4>
+                            <p>•    Conducted over 200 hours of exploratory data analysis to identify high-value credit risk score features and evaluate their effectiveness.</p>
+                            <p>•	Delivered data-driven insights and strategic recommendations to industry executives using Tableau and PowerPoint, leading to the resolution of over 20 software bugs and the removal of performance-impeding features.</p>
+                            <p>•	Collaborated cross-functionally with diverse teams to develop advanced risk models and optimize risk management strategies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block">
+                        <div class="timeline-left">
+                            <div class="timeline-date">2020–2020</div>
+                        </div>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content">
+                            <h4>KMPG | Data Engineering Intern</h4>
+                            <h4>Manchester, UK</h4>
+                            <p>•	Analyzed customer behavior patterns to inform client decision-making, facilitating more effective campaign planning and customer acquisition strategies.</p>
+                            <p>•	Leveraged customer demographic, address, and transaction data to generate actionable insights through data cleansing, modeling, and segmentation methodologies.</p>
+                            <p>•	Engineered and visualized an interactive Power BI dashboard, synthesizing complex datasets into intuitive visual summaries that highlighted high-value customer segments.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GuidedByFaith Section -->
+    <section id="guidedbyfaith" class="guidedbyfaith-section" data-aos="fade-up">
+        <h2 class="section-title">GuidedByFaith</h2>
+        <div class="guidedbyfaith-container">
+            <div class="guidedbyfaith-text">
+                <p>
+                    <strong>GuidedByFaith</strong> is a passion project I founded to share daily Islamic reminders and reflections rooted
+                    in sincerity and spiritual growth. Through short-form videos and uplifting messages, I aim to make
+                    faith-centered content accessible in a fast-paced digital world.
+                </p>
+                <p>
+                    Join the growing community of believers striving to reconnect with Allah ﷻ through dhikr, reflection, and
+                    purpose-driven living.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/guid_edbyfaith?igsh=MW14ejRrcnhodHpldQ%3D%3D&utm_source=qr" target="_blank" class="social-button">
+                        <i class='bx bxl-instagram'></i> Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@guidedbyfaith__" target="_blank" class="social-button">
+                        <i class='bx bxl-tiktok'></i> TikTok
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VbAWjMA5Ui2eZ6Mnho3P" target="_blank" class="social-button">
+                        <i class='bx bxl-whatsapp'></i> WhatsApp
+                    </a>
+                    <a href="https://t.me/GuidedbyFaithOfficial" target="_blank" class="social-button">
+                        <i class='bx bxl-telegram'></i> Telegram
+                    </a>
+                </div>
+            </div>
+            <div class="guidedbyfaith-logo">
+                <img src="Images/guidedbyfaith.png" alt="GuidedByFaith Logo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="resume-section" data-aos="fade-up">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> Danyal.aurangzeb@hotmail.com</p>
+                <p><strong>Location:</strong> Manchester, UK</p>
+                <p><strong>Available for:</strong> Consulting or Collaborations</p>
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xgvzaovw" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="social-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <!-- Scripts -->
+    <!-- AOS Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    var typed = new Typed('.typed-text', {
+      strings: ["Hi, I'm Danyal Aurangzeb"],
+      typeSpeed: 50,
+      showCursor: false
+    });
+    </script>
+
+    <!-- Scroll to top button logic -->
+    <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300
+      ) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    };
+    scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    </script>
+</body>
+
+</html>
